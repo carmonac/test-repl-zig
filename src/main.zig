@@ -2,7 +2,6 @@ const std = @import("std");
 const Child = std.process.Child;
 
 pub fn main() !void {
-    // Uncomment this block to pass the first stage
     while (true) {
         const stdout = std.io.getStdOut().writer();
         try stdout.print("$ ", .{});
